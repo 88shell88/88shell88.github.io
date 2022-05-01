@@ -1,25 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
+  const audio = new Audio(
+    "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+  );
+
+  const start = () => {
+    audio.play();
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-      <button type="button">Click Me!</button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={start}>Play</button>
     </div>
   );
 }
