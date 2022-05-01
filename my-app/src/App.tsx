@@ -1,8 +1,9 @@
 import React from "react";
 
+
 function App() {
   const audio = new Audio(
-    "../piano-mp3/A0.mp3"
+    './piano-mp3/A0.mp3'
   );
 
   const start = () => {
