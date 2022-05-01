@@ -1,5 +1,5 @@
 import React from "react";
-import './piano-mp3/';
+import './piano-mp3';
 
 function App() {
   const audio = new Audio(
