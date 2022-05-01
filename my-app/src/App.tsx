@@ -1,10 +1,7 @@
 import React from "react";
-import sound from "./piano-mp3/A0.mp3";
-
 
 function App() {
   const audio = new Audio(
-    sound
   );
 
   const start = () => {
@@ -14,6 +11,12 @@ function App() {
   return (
     <div>
       <button onClick={start}>Play</button>
+      <audio
+        controls
+        src="./piano-mp3/A0.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
     </div>
   );
 }
