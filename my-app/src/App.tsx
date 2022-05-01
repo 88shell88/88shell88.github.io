@@ -2,7 +2,7 @@ import React from "react";
 
 function App() {
   const audio = new Audio(
-    "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3"
+    "https://github.com/fuhton/piano-mp3/blob/master/piano-mp3/A0.mp3"
   );
 
   const start = () => {
