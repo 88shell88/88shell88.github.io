@@ -3,7 +3,7 @@ import React from "react";
 
 function App() {
   const audio = new Audio(
-    "@Url.Content('./piano-mp3/A0.mp3')"
+    './piano-mp3/A0.mp3'
   );
 
   const start = () => {
