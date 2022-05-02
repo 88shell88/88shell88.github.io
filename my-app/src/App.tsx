@@ -1,5 +1,5 @@
 import React from "react";
-// import * as Things from './piano-mp3/*';
+import { notes } from './piano-mp3';
 // import n2 from './piano-mp3/B0.mp3';
 // import n3 from './piano-mp3/C1.mp3';
 // import n4 from './piano-mp3/D1.mp3';
@@ -97,13 +97,16 @@ fileNames.forEach((element: string) => {
 });
 
 function App() {
-  let arr = ['./piano-mp3/A0.mp3','./piano-mp3/B0.mp3','./piano-mp3/C1.mp3']
+  let arr: { [x: string]: any; } // = ['./piano-mp3/A0.mp3','./piano-mp3/B0.mp3','./piano-mp3/C1.mp3']
   const audio = new Audio(
     './piano-mp3/A0.mp3'
   );
+  notes.forEach((n: string | number) => {
+    arr[n] = `../piano-mp3/${n}.mp3`;
+  });
 
   const start = () => {
-    audio.play();
+    arr[0].play();
   };
 
   return (
